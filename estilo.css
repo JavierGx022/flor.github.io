@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box; /* Añade esta línea para incluir el padding y border en el tamaño total del elemento */
 }
 
 body {
@@ -27,311 +28,68 @@ body {
     box-shadow: 2px 2px 0px 0px rgb(253, 170, 122),
         -2px -2px 0px 0px rgb(223, 166, 114);
         filter: drop-shadow(0 0 50px #e22c2c);
-
-
 }
 
+/* Ajustes para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .sol {
+        width: 10%; /* Ajusta el tamaño del sol para pantallas más pequeñas */
+        height: 20%;
+        top: 10%;
+        left: 30%;
+    }
 
-.contenedor {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 43.5%;
-    left: 40%;
-    scale: 1.2;
-}
+    .contenedor, .contenedor2, .contenedor3, .contenedor4, .contenedor5, .contenedor6, .contenedor7, .contenedor8, .contenedor9, .contenedor10, .contenedor11, .contenedor13, .contenedor14, .contenedor15, .contenedor16 {
+        width: 50%; /* Ajusta el ancho de los contenedores para pantallas más pequeñas */
+        height: 20%; /* Ajusta la altura de los contenedores para pantallas más pequeñas */
+        top: auto; /* Elimina la posición absoluta */
+        left: auto; /* Elimina la posición absoluta */
+        margin: 10px auto; /* Alinea los contenedores al centro */
+        transform: scale(0.8); /* Escala los contenedores */
+    }
 
-.contenedor2 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 47%;
-    left: 20%;
-}
+    .eContenedores .petalo {
+        width: 15%; /* Ajusta el tamaño de los pétalos para pantallas más pequeñas */
+        height: 10%; /* Ajusta el tamaño de los pétalos para pantallas más pequeñas */
+        top: 8%; /* Ajusta la posición de los pétalos */
+        left: 10%; /* Ajusta la posición de los pétalos */
+    }
 
-.contenedor3 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 47%;
-    left: -2%;
-    scale: .8;
-}
+    .eContenedores .petalo2 {
+        left: 40%; /* Ajusta la posición de los pétalos */
+    }
 
-.contenedor4 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 30%;
-    left: 7%;
+    .eContenedores .petalo3 {
+        top: 20%; /* Ajusta la posición de los pétalos */
+    }
 
-    scale: .5;
-}
+    .eContenedores .petalo4 {
+        left: 40%; /* Ajusta la posición de los pétalos */
+    }
 
-.contenedor5 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 25%;
-    left: 28%;
-    scale: .6;
-}
+    .centro {
+        width: 20%; /* Ajusta el tamaño del centro */
+        height: 10%; /* Ajusta el tamaño del centro */
+        top: 15%; /* Ajusta la posición del centro */
+        left: 40%; /* Ajusta la posición del centro */
+    }
 
-.contenedor6 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 20%;
-    left: -6%;
-    scale: .4;
-    z-index: -1;
+    .tallo {
+        width: 1%; /* Ajusta el ancho del tallo */
+        height: 20%; /* Ajusta la altura del tallo */
+        top: 30%; /* Ajusta la posición del tallo */
+        left: 45%; /* Ajusta la posición del tallo */
+    }
 
-}
+    .hoja1, .hoja2 {
+        width: 10%; /* Ajusta el tamaño de las hojas */
+        height: 5%; /* Ajusta el tamaño de las hojas */
+        top: 45%; /* Ajusta la posición de las hojas */
+        left: 30%; /* Ajusta la posición de las hojas */
+    }
 
-.contenedor7 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 20%;
-    left: 13%;
-    scale: .4;
-}
-
-.contenedor13 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 50%;
-    left: 10%;
-    scale: .4;
-}
-.contenedor14 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 50%;
-    left: 30%;
-    scale: .4;
-}
-.contenedor15 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 50%;
-    left: 50%;
-    scale: .4;
-}
-
-.contenedor16 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 50%;
-    left: 65%;
-    scale: .4;
-}
-.contenedor8 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 20%;
-    left: 49%;
-    scale: .5;
-    z-index: 1;
-}
-
-.contenedor9 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 40%;
-    left: 58%;
-}
-
-.contenedor10 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 30%;
-    left: 71.5%;
-    scale: .7;
-}
-
-.contenedor11 {
-    position: absolute;
-    width: 20%;
-    height: 70%;
-    top: 47.5%;
-    left: 83.4%;
-}
-
-.eContenedores .petalo {
-    background: linear-gradient(to top, #D15B01, #FDC300, #FDC300);
-    width: 27%;
-    height: 15%;
-    position: absolute;
-    top: 15%;
-    left: 20%;
-    border-top-right-radius: 150%;
-    border-top-left-radius: 40%;
-    border-bottom-left-radius: 150%;
-    border-bottom-right-radius: 15%;
-    z-index: 1;
-}
-
-
-.eContenedores .petalo2 {
-    background: linear-gradient(to top, #D15B01, #FDC300, #FDC300);
-    width: 27%;
-    height: 15%;
-    position: absolute;
-    top: 15%;
-    left: 47%;
-    border-top-right-radius: 40%;
-    border-top-left-radius: 150%;
-    border-bottom-left-radius: 15%;
-    border-bottom-right-radius: 150%;
-    z-index: 1;
-}
-
-.centro {
-
-    background: -webkit-radial-gradient(center, circle, #110B0B, #3F1B16 50%);
-    width: 28%;
-    height: 16%;
-    position: absolute;
-    top: 22%;
-    left: 33%;
-    border-radius: 50%;
-    animation: giroF 2s linear infinite;
-
-    z-index: 2;
-}
-
-.eContenedores .petalo3 {
-    background: linear-gradient(to left, #D15B01, #FDC300, #FDC300);
-    width: 27%;
-    height: 15%;
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    border-top-right-radius: 15%;
-    border-top-left-radius: 150%;
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 150%;
-    animation: giro3 2s linear infinite;
-    z-index: 1;
-}
-
-.eContenedores .petalo4 {
-    background: linear-gradient(to right, #D15B01, #FDC300, #FDC300);
-    width: 27%;
-    height: 15%;
-    position: absolute;
-    top: 30%;
-    left: 47%;
-    border-top-right-radius: 150%;
-    border-top-left-radius: 15%;
-    border-bottom-left-radius: 150%;
-    border-bottom-right-radius: 40%;
-    animation: giro4 2s linear infinite;
-    z-index: 1;
-}
-
-.eContenedores .petalo5 {
-    background: linear-gradient(to top, #D15B01, #FDC300, #FDC300);
-    width: 27%;
-    height: 15%;
-    position: absolute;
-    top: 12%;
-    left: 32.7%;
-    border-top-right-radius: 150%;
-    border-top-left-radius: 40%;
-    border-bottom-left-radius: 150%;
-    border-bottom-right-radius: 15%;
-    rotate: 44deg;
-}
-
-.eContenedores .petalo6 {
-    background: linear-gradient(to top, #D15B01, #FDC300, #FDC300);
-    width: 27%;
-    height: 15%;
-    position: absolute;
-    top: 23%;
-    left: 52%;
-    border-top-right-radius: 40%;
-    border-top-left-radius: 150%;
-    border-bottom-left-radius: 15%;
-    border-bottom-right-radius: 150%;
-    rotate: 44deg;
-}
-
-.eContenedores .petalo7 {
-    background: linear-gradient(to right, #D15B01, #FDC300, #FDC300);
-    width: 27%;
-    height: 15%;
-    position: absolute;
-    top: 34%;
-    left: 33.4%;
-    border-top-right-radius: 150%;
-    border-top-left-radius: 15%;
-    border-bottom-left-radius: 150%;
-    border-bottom-right-radius: 40%;
-    animation: giro4 2s linear infinite;
-    rotate: 44deg;
-}
-
-.eContenedores .petalo8 {
-    
-    background: linear-gradient(to left, #D15B01, #FDC300, #FDC300);
-    width: 27%;
-    height: 15%;
-    position: absolute;
-    top: 23%;
-    left: 14%;
-    border-top-right-radius: 15%;
-    border-top-left-radius: 150%;
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 150%;
-    animation: giro3 2s linear infinite;
-    rotate: 44deg;
-}
-
-
-
-.tallo {
-    background: linear-gradient(to top, #295a1d, #43573E, #667266);
-    position: absolute;
-    top: 25%;
-    left: 45%;
-    width: 3%;
-    height: 50%;
-    z-index: -1;
-}
-
-.hoja1 {
-    background: linear-gradient(to right bottom, #01fd01, #408b22, #00ff00);
-    width: 20%;
-    height: 10%;
-    position: absolute;
-    top: 52%;
-    left: 30%;
-    border-top-right-radius: 150%;
-    border-top-left-radius: 150%;
-    border-bottom-left-radius: 4%;
-    border-bottom-right-radius: 150%;
-}
-
-.hoja2 {
-    background: linear-gradient(to right bottom, #01fd01, #408b22, #00ff00);
-    width: 20%;
-    height: 10%;
-    position: absolute;
-    top: 64%;
-    left: 40%;
-    border-top-right-radius: 150%;
-    border-top-left-radius: 150%;
-    border-bottom-left-radius: 4%;
-    border-bottom-right-radius: 150%;
-    transform: rotateY(180deg);
+    .hoja2 {
+        top: 55%; /* Ajusta la posición de las hojas */
+        left: 40%; /* Ajusta la posición de las hojas */
+    }
 }
