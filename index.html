@@ -6,12 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tus flores amarillas</title>
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        #gradual-text {
+           
+            white-space: pre-line;
+            margin-left: 6%;
+           margin-top: -3%;
+            font-size: 40px;
+            font-family: 'lobster', cursive;
+        }
 
+        #additional-text {
+        display: none;
+        font-size: 60px;
+        font-family: 'lobster', cursive;
+        margin-left: 40%;
+        color: black;
+        
+        
+    }
+    </style>
 </head>
 
 <body>
 
+
+  
     <div class="principal">
+        <div id="gradual-text">
+            <p></p>
+        </div>
+        
+
+        <div id="additional-text">
+           <div style="display: flex;">
+            <p>Te amo Dani <3</p>
+            <img src="https://i.ibb.co/WcYWys0/pingui500-removebg-preview.png" width="100px" style="float: right; margin-left: 10px;">
+           </div>
+        </div>
         <div class="sol"></div>
         <div class="contenedor eContenedores">
             <div class="petalo petalos"></div>
@@ -117,6 +150,66 @@
             <div class="hoja2"></div>
 
         </div>
+        <div class="contenedor13 eContenedores">
+            <div class="petalo petalos" id="petalo"></div>
+            <div class=" petalo2 petalos" id="petalo2"></div>
+            <div class="centro" id="centro"></div>
+            <div class=" petalo3 petalos" id="petalo3"></div>
+            <div class=" petalo4 petalos" id="petalo4"></div>
+            <div class=" petalo5 petalos" id="petalo5"></div>
+            <div class=" petalo6 petalos" id="petalo6"></div>
+            <div class=" petalo7 petalos" id="petalo7"></div>
+            <div class=" petalo8 petalos" id="petalo8"></div>
+            <div class="tallo"></div>
+            <div class="hoja1"></div>
+            <div class="hoja2"></div>
+
+        </div>
+        <div class="contenedor14 eContenedores">
+            <div class="petalo petalos" id="petalo"></div>
+            <div class=" petalo2 petalos" id="petalo2"></div>
+            <div class="centro" id="centro"></div>
+            <div class=" petalo3 petalos" id="petalo3"></div>
+            <div class=" petalo4 petalos" id="petalo4"></div>
+            <div class=" petalo5 petalos" id="petalo5"></div>
+            <div class=" petalo6 petalos" id="petalo6"></div>
+            <div class=" petalo7 petalos" id="petalo7"></div>
+            <div class=" petalo8 petalos" id="petalo8"></div>
+            <div class="tallo"></div>
+            <div class="hoja1"></div>
+            <div class="hoja2"></div>
+
+        </div>
+        <div class="contenedor15 eContenedores">
+            <div class="petalo petalos" id="petalo"></div>
+            <div class=" petalo2 petalos" id="petalo2"></div>
+            <div class="centro" id="centro"></div>
+            <div class=" petalo3 petalos" id="petalo3"></div>
+            <div class=" petalo4 petalos" id="petalo4"></div>
+            <div class=" petalo5 petalos" id="petalo5"></div>
+            <div class=" petalo6 petalos" id="petalo6"></div>
+            <div class=" petalo7 petalos" id="petalo7"></div>
+            <div class=" petalo8 petalos" id="petalo8"></div>
+            <div class="tallo"></div>
+            <div class="hoja1"></div>
+            <div class="hoja2"></div>
+
+        </div>
+        <div class="contenedor16 eContenedores">
+            <div class="petalo petalos" id="petalo"></div>
+            <div class=" petalo2 petalos" id="petalo2"></div>
+            <div class="centro" id="centro"></div>
+            <div class=" petalo3 petalos" id="petalo3"></div>
+            <div class=" petalo4 petalos" id="petalo4"></div>
+            <div class=" petalo5 petalos" id="petalo5"></div>
+            <div class=" petalo6 petalos" id="petalo6"></div>
+            <div class=" petalo7 petalos" id="petalo7"></div>
+            <div class=" petalo8 petalos" id="petalo8"></div>
+            <div class="tallo"></div>
+            <div class="hoja1"></div>
+            <div class="hoja2"></div>
+
+        </div>
         <div class="contenedor8 eContenedores">
             <div class="petalo petalos" id="petalo"></div>
             <div class=" petalo2 petalos" id="petalo2"></div>
@@ -179,7 +272,51 @@
         </div>
     </div>
 
+   
+
     <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var paragraph = document.querySelector('#gradual-text p');
+            var additionalText = document.querySelector('#additional-text');
+            var lines = [
+            "",
+                "Dicen que las flores amarillas",
+				"son para prometer amor eterno,",
+                "entonces recorde que quiero",
+                "estar contigo siempre..."
+            ];
+            var additionalLines = [
+                "Texto adicional que también aparecerá línea por línea.",
+                "Puedes agregar más líneas aquí también."
+            ];
+            var index = 0;
+
+            function showLine() {
+                if (index < lines.length) {
+                    paragraph.textContent += lines[index++] + '\n';
+                    if (index === 1) {
+                        setTimeout(showLine, 2000); // Cambia el tiempo en milisegundos según lo deseado para la primera línea
+                    } else {
+                        setTimeout(showLine, 2000); // Cambia el tiempo en milisegundos según lo deseado para las líneas restantes
+                    }
+                } else {
+                    index = 0;
+                    paragraph.textContent = lines[index++] + '\n';
+                    setTimeout(function() {
+                        additionalText.style.display = "block"; // Mostrar el texto adicional
+                        setTimeout(function() {
+                            additionalText.style.display = "none"; // Ocultar el texto adicional después de un tiempo
+                            showLine(); // Volver a mostrar el primer texto
+                        }, 2000); // Cambia el tiempo en milisegundos según lo deseado para mostrar el texto adicional
+                    }, 1000); // Cambia el tiempo en milisegundos según lo deseado para esperar antes de mostrar el texto adicional
+                }
+            }
+
+            showLine();
+        });
+    </script>
 
 </body>
 

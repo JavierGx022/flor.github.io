@@ -4,12 +4,12 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(247, 97, 97);
     overflow: hidden;
 }
 
 .principal {
-    background: linear-gradient(to top, #313408, #45440C, #43573E, #D79C85, #FEF3BB, #F8D0AC, #BB908A);
+    background: linear-gradient(to top, #436325, #5d913a, #43573E, #f8a150, #ffa640, #b1b7d3, #87a3c4);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -97,6 +97,39 @@ body {
     scale: .4;
 }
 
+.contenedor13 {
+    position: absolute;
+    width: 20%;
+    height: 70%;
+    top: 50%;
+    left: 10%;
+    scale: .4;
+}
+.contenedor14 {
+    position: absolute;
+    width: 20%;
+    height: 70%;
+    top: 50%;
+    left: 30%;
+    scale: .4;
+}
+.contenedor15 {
+    position: absolute;
+    width: 20%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    scale: .4;
+}
+
+.contenedor16 {
+    position: absolute;
+    width: 20%;
+    height: 70%;
+    top: 50%;
+    left: 65%;
+    scale: .4;
+}
 .contenedor8 {
     position: absolute;
     width: 20%;
@@ -249,6 +282,7 @@ body {
 }
 
 .eContenedores .petalo8 {
+    
     background: linear-gradient(to left, #D15B01, #FDC300, #FDC300);
     width: 27%;
     height: 15%;
@@ -266,7 +300,7 @@ body {
 
 
 .tallo {
-    background: linear-gradient(to top, #43573E, #43573E, #667266);
+    background: linear-gradient(to top, #295a1d, #43573E, #667266);
     position: absolute;
     top: 25%;
     left: 45%;
@@ -276,7 +310,7 @@ body {
 }
 
 .hoja1 {
-    background: linear-gradient(to right bottom, #667266, #313408, #667266);
+    background: linear-gradient(to right bottom, #01fd01, #408b22, #00ff00);
     width: 20%;
     height: 10%;
     position: absolute;
@@ -289,7 +323,7 @@ body {
 }
 
 .hoja2 {
-    background: linear-gradient(to right bottom, #667266, #313408, #667266);
+    background: linear-gradient(to right bottom, #01fd01, #408b22, #00ff00);
     width: 20%;
     height: 10%;
     position: absolute;

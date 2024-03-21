@@ -99,11 +99,47 @@ const c11elementPetalo6 = document.querySelector(".contenedor11 .petalo6");
 const c11elementPetalo7 = document.querySelector(".contenedor11 .petalo7");
 const c11elementPetalo8 = document.querySelector(".contenedor11 .petalo8");
 
+const c13elementPetalo1 = document.querySelector(".contenedor13 .petalo");
+const c13elementPetalo2 = document.querySelector(".contenedor13 .petalo2");
+const c13elementPetalo3 = document.querySelector(".contenedor13 .petalo3");
+const c13elementPetalo4 = document.querySelector(".contenedor13 .petalo4");
+const c13elementPetalo5 = document.querySelector(".contenedor13 .petalo5");
+const c13elementPetalo6 = document.querySelector(".contenedor13 .petalo6");
+const c13elementPetalo7 = document.querySelector(".contenedor13 .petalo7");
+const c13elementPetalo8 = document.querySelector(".contenedor13 .petalo8");
+
+const c14elementPetalo1 = document.querySelector(".contenedor14 .petalo");
+const c14elementPetalo2 = document.querySelector(".contenedor14 .petalo2");
+const c14elementPetalo3 = document.querySelector(".contenedor14 .petalo3");
+const c14elementPetalo4 = document.querySelector(".contenedor14 .petalo4");
+const c14elementPetalo5 = document.querySelector(".contenedor14 .petalo5");
+const c14elementPetalo6 = document.querySelector(".contenedor14 .petalo6");
+const c14elementPetalo7 = document.querySelector(".contenedor14 .petalo7");
+const c14elementPetalo8 = document.querySelector(".contenedor14 .petalo8");
+
+const c15elementPetalo1 = document.querySelector(".contenedor15 .petalo");
+const c15elementPetalo2 = document.querySelector(".contenedor15 .petalo2");
+const c15elementPetalo3 = document.querySelector(".contenedor15 .petalo3");
+const c15elementPetalo4 = document.querySelector(".contenedor15 .petalo4");
+const c15elementPetalo5 = document.querySelector(".contenedor15 .petalo5");
+const c15elementPetalo6 = document.querySelector(".contenedor15 .petalo6");
+const c15elementPetalo7 = document.querySelector(".contenedor15 .petalo7");
+const c15elementPetalo8 = document.querySelector(".contenedor15 .petalo8");
+
+const c16elementPetalo1 = document.querySelector(".contenedor16 .petalo");
+const c16elementPetalo2 = document.querySelector(".contenedor16 .petalo2");
+const c16elementPetalo3 = document.querySelector(".contenedor16 .petalo3");
+const c16elementPetalo4 = document.querySelector(".contenedor16 .petalo4");
+const c16elementPetalo5 = document.querySelector(".contenedor16 .petalo5");
+const c16elementPetalo6 = document.querySelector(".contenedor16 .petalo6");
+const c16elementPetalo7 = document.querySelector(".contenedor16 .petalo7");
+const c16elementPetalo8 = document.querySelector(".contenedor16 .petalo8");
+
 const keyframesPetalo1 = [
     {
         transform: "rotateZ(0deg)",
         left: "20%",
-        background: "linear-gradient(to top, #D15B01, #9673C5, #9673C5)",
+        background: "linear-gradient(to top, #D15B01, #FF4ECC, #FF4ECC )",
         offset: 0,
     },
     {
@@ -117,14 +153,14 @@ const keyframesPetalo1 = [
         transform: "rotateZ(180deg)",
         left: "47%",
         top: "30%",
-        background: "linear-gradient(to top, #565656, #FEFDFB, #FEFDFB)",
+        background: "linear-gradient(to top, #565656, #EEBADF, #EEBADF)",
         offset: 0.5,
     },
     {
         transform: "rotateZ(270deg)",
         left: "20%",
         top: "30%",
-        background: "linear-gradient(to top, #D15B01, #9673C5, #9673C5)",
+        background: "linear-gradient(to top, #D15B01, #FF4ECC, #FF4ECC)",
         offset: 0.75,
     },
     {
@@ -145,7 +181,7 @@ const keyframesPetalo2 = [
         transform: "rotateZ(0deg)",
         left: "47%",
         top: "15%",
-        background: "linear-gradient(to top, #D15B01, #9673C5, #9673C5)",
+        background: "linear-gradient(to top, #D15B01, #FF4ECC, #FF4ECC)",
         offset: 0,
     },
     {
@@ -166,7 +202,7 @@ const keyframesPetalo2 = [
         transform: "rotateZ(270deg)",
         left: "20%",
         top: "15%",
-        background: "linear-gradient(to top, #D15B01, #9673C5, #9673C5)",
+        background: "linear-gradient(to top, #D15B01, #FF4ECC, #FF4ECC)",
         offset: 0.75,
     },
     {
@@ -187,7 +223,7 @@ const keyframesPetalo3 = [
         transform: "rotateZ(0deg)",
         left: "20%",
         top: "30%",
-        background: "linear-gradient(to left, #D15B01, #9673C5, #9673C5)",
+        background: "linear-gradient(to left, #D15B01, #FF4ECC, #FF4ECC)",
         offset: 0,
     },
     {
@@ -208,7 +244,7 @@ const keyframesPetalo3 = [
         transform: "rotateZ(270deg)",
         left: "47%",
         top: "30%",
-        background: "linear-gradient(to left, #D15B01, #9673C5, #9673C5)",
+        background: "linear-gradient(to left, #D15B01, #FF4ECC, #FF4ECC)",
         offset: 0.75,
     },
     {
@@ -228,7 +264,7 @@ const keyframesPetalo4 = [
     {
         transform: "rotateZ(0deg)",
         left: "47%",
-        background: "linear-gradient(to right, #D15B01, #9673C5, #9673C5)",
+        background: "linear-gradient(to right, #D15B01, #FF4ECC, #FF4ECC)",
         offset: 0,
     },
     {
@@ -443,6 +479,10 @@ function iniciar() {
     var elementoC9Centro = document.querySelector(".contenedor9 .centro");
     var elementoC10Centro = document.querySelector(".contenedor10 .centro");
     var elementoC11Centro = document.querySelector(".contenedor11 .centro");
+    var elementoC13Centro = document.querySelector(".contenedor13 .centro");
+    var elementoC14Centro = document.querySelector(".contenedor14 .centro");
+    var elementoC15Centro = document.querySelector(".contenedor15 .centro");
+    var elementoC16Centro = document.querySelector(".contenedor16 .centro");
 
     elementoC1Centro.addEventListener("mousemove", girarGirasol1);
     elementoC2Centro.addEventListener("mousemove", girarGirasol2);
@@ -455,6 +495,10 @@ function iniciar() {
     elementoC9Centro.addEventListener("mousemove", girarGirasol9);
     elementoC10Centro.addEventListener("mousemove", girarGirasol10);
     elementoC11Centro.addEventListener("mousemove", girarGirasol11);
+    elementoC13Centro.addEventListener("mousemove", girarGirasol13);
+    elementoC14Centro.addEventListener("mousemove", girarGirasol14);
+    elementoC15Centro.addEventListener("mousemove", girarGirasol15);
+    elementoC16Centro.addEventListener("mousemove", girarGirasol16);
 }
 
 function girarGirasol1(evento) {
@@ -566,5 +610,45 @@ function girarGirasol11(evento) {
     c11elementPetalo6.animate(keyframesPetalo6, optionsPetalo6);
     c11elementPetalo7.animate(keyframesPetalo7, optionsPetalo7);
     c11elementPetalo8.animate(keyframesPetalo8, optionsPetalo8);
+}
+function girarGirasol13(evento) {
+    c13elementPetalo1.animate(keyframesPetalo1, optionsPetalo1);
+    c13elementPetalo2.animate(keyframesPetalo2, optionsPetalo2);
+    c13elementPetalo3.animate(keyframesPetalo3, optionsPetalo3);
+    c13elementPetalo4.animate(keyframesPetalo4, optionsPetalo4);
+    c13elementPetalo5.animate(keyframesPetalo5, optionsPetalo5);
+    c13elementPetalo6.animate(keyframesPetalo6, optionsPetalo6);
+    c13elementPetalo7.animate(keyframesPetalo7, optionsPetalo7);
+    c13elementPetalo8.animate(keyframesPetalo8, optionsPetalo8);
+}
+function girarGirasol14(evento) {
+    c14elementPetalo1.animate(keyframesPetalo1, optionsPetalo1);
+    c14elementPetalo2.animate(keyframesPetalo2, optionsPetalo2);
+    c14elementPetalo3.animate(keyframesPetalo3, optionsPetalo3);
+    c14elementPetalo4.animate(keyframesPetalo4, optionsPetalo4);
+    c14elementPetalo5.animate(keyframesPetalo5, optionsPetalo5);
+    c14elementPetalo6.animate(keyframesPetalo6, optionsPetalo6);
+    c14elementPetalo7.animate(keyframesPetalo7, optionsPetalo7);
+    c14elementPetalo8.animate(keyframesPetalo8, optionsPetalo8);
+}
+function girarGirasol15(evento) {
+    c15elementPetalo1.animate(keyframesPetalo1, optionsPetalo1);
+    c15elementPetalo2.animate(keyframesPetalo2, optionsPetalo2);
+    c15elementPetalo3.animate(keyframesPetalo3, optionsPetalo3);
+    c15elementPetalo4.animate(keyframesPetalo4, optionsPetalo4);
+    c15elementPetalo5.animate(keyframesPetalo5, optionsPetalo5);
+    c15elementPetalo6.animate(keyframesPetalo6, optionsPetalo6);
+    c15elementPetalo7.animate(keyframesPetalo7, optionsPetalo7);
+    c15elementPetalo8.animate(keyframesPetalo8, optionsPetalo8);
+}
+function girarGirasol16(evento) {
+    c16elementPetalo1.animate(keyframesPetalo1, optionsPetalo1);
+    c16elementPetalo2.animate(keyframesPetalo2, optionsPetalo2);
+    c16elementPetalo3.animate(keyframesPetalo3, optionsPetalo3);
+    c16elementPetalo4.animate(keyframesPetalo4, optionsPetalo4);
+    c16elementPetalo5.animate(keyframesPetalo5, optionsPetalo5);
+    c16elementPetalo6.animate(keyframesPetalo6, optionsPetalo6);
+    c16elementPetalo7.animate(keyframesPetalo7, optionsPetalo7);
+    c16elementPetalo8.animate(keyframesPetalo8, optionsPetalo8);
 }
 window.addEventListener("load", iniciar);
